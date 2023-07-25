@@ -7,6 +7,10 @@ module.exports = {
       'black': '#000000',
       'white': '#FFFFFF',
     },
+    fontFamily: {
+      'opensans': ['Open Sans', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
