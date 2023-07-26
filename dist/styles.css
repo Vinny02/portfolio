@@ -1,0 +1,6 @@
+.slide {
+    -webkit-transition: margin .5s; /* Safari prior 6.1 */
+  transition: margin .5s;
+}
+
+
