@@ -24,7 +24,7 @@
                 <span class="ml-2 font-semibold">Your Logo</span>
             </div>
 
-            <div class="flex items-center space-x-8">
+            <div class="flex items-center font-poppins space-x-8">
                 <h2 class="hover:text-black">Home</h2>
                 <h2 class="hover:text-gray-300">About</h2>
                 <h2 class="hover:text-gray-300">Projects</h2>
@@ -34,33 +34,51 @@
     </nav>
 
     <!-- sidebar -->
-   
+
     <div class="flex lg:hidden">
-        <div id="sidebar" class="sidebar bg-transparent text-white -mr-48 w-48 absolute right-0 h-screen slide z-10">
-            <h2 class="text-2xl pl-2">Super Appen</h2>
-            <hr />
-            <ul>
-                <li class="text-xl uppercase p-2 hover:bg-gray-200"><i class="fas fa-home"></i> number 1</li>
-                <li class="text-xl uppercase p-2 hover:bg-gray-200"><i class="fas fa-hotel"></i> number 2</li>
-                <li class="text-xl uppercase p-2 hover:bg-gray-200"><i class="fas fa-h-square"></i> number 3</li>
-                <li class="text-xl uppercase p-2 hover:bg-gray-200"><i class="fas fa-igloo"></i> number 4</li>
+        <div id="sidebar"
+            class="sidebar bg-black font-poppins text-white -ml-48 w-48 absolute left-0 top-20 h-screen slide z-10 overflow-hidden">
+            <ul class="pl-4">
+                <li class="text-l pb-2 hover:bg-gray-200"></i>Home</li>
+                <li class="text-l pb-2 hover:bg-gray-200"></i>About</li>
+                <li class="text-l pb-2 hover:bg-gray-200"></i>Projects</li>
+                <li class="text-l pb-2 hover:bg-gray-200"></i>Contact</li>
             </ul>
 
         </div>
-        <div id="menutoggle" class="text-white absolute right-0">X</div>
+        <div id="menutoggle" class="text-white absolute right-8 top-5 text-2xl">X</div>
 
     </div>
     <!-- mainpg -->
 
-    <div class="container bg-black  max-w-full z">
-        <div class="flex flex-col items-center justify-center h-screen px-5 space-y-8">
+    <div class="container bg-black  max-w-full h-screen z">
+        <div id='Home' class="flex flex-col items-center justify-center h-screen px-5 space-y-8">
             <div class="flex flex-row space-x-4">
                 <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">PETER</h1>
                 <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans"> PARKER</h1>
             </div>
             <h2 class="lg:text-2xl md:text-1xl text-l text-white font-medium font-poppins">Software Developer</h2>
         </div>
+
+        <div id='About' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
+            <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">ABOUT</h1>
+        </div>
+
+        <div id='Projects' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
+            <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">PROJECTS</h1>
+        </div>
+
+        <div id='Contact' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
+            <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">CONTACT</h1>
+        </div>
+
     </div>
+
+    <!-- secondpg-->
+
+
+
+
 
 
     <script src="main.js"></script>
