@@ -16,20 +16,18 @@
 </head>
 
 <body>
-
-    <nav class="fixed top-0 left-0 w-full bg-black text-white hidden lg:block">
+    <!-- navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-transparent text-white hidden lg:block">
         <div class="container flex items-center justify-between w-3/5 py-10 mx-auto max-w-screen-xl">
             <div class="flex items-center">
-                <img src="path/to/your-logo.png" alt="Logo" class="h-8 w-8">
-                <span class="ml-2 font-semibold">Your Logo</span>
+                <img src="./logo_svg.svg" alt="Logo" class="h-20 w-20">
             </div>
-
-            <div class="flex items-center font-poppins space-x-8">
-                <h2 class="hover:text-black">Home</h2>
-                <h2 class="hover:text-gray-300">About</h2>
-                <h2 class="hover:text-gray-300">Projects</h2>
-                <h2 class="hover:text-gray-300">Contact</h2>
-            </div>
+            <ul class="flex items-center font-poppins space-x-8">
+                <li class="hover:text-black">Home</li>
+                <li class="hover:text-gray-300">About</li>
+                <li class="hover:text-gray-300">Projects</li>
+                <li class="hover:text-gray-300">Contact</li>
+            </ul>
         </div>
     </nav>
 
@@ -37,8 +35,9 @@
 
     <div class="flex lg:hidden">
         <div id="sidebar"
-            class="sidebar bg-black font-poppins text-white -ml-48 w-48 absolute left-0 top-20 h-screen slide z-10 overflow-hidden">
-            <ul class="pl-4">
+            class="sidebar bg-black font-poppins text-white -ml-48 w-36 absolute left-0 top-0 h-screen slide overflow-hidden">
+            <img src="./logo_svg.svg" alt="Logo" class="h-20 w-20 mx-auto mt-4">
+            <ul class="pl-4 pt-8 ">
                 <li class="text-l pb-2 hover:bg-gray-200"></i>Home</li>
                 <li class="text-l pb-2 hover:bg-gray-200"></i>About</li>
                 <li class="text-l pb-2 hover:bg-gray-200"></i>Projects</li>
@@ -46,10 +45,11 @@
             </ul>
 
         </div>
-        <div id="menutoggle" class="text-white absolute right-8 top-5 text-2xl">X</div>
-
     </div>
-    <!-- mainpg -->
+
+    <div id="menutoggle" class=" lg:hidden text-white absolute right-8 top-5 text-2xl">X</div>
+
+    <!-- Main page -->
 
     <div class="container bg-black  max-w-full h-screen z">
         <div id='Home' class="flex flex-col items-center justify-center h-screen px-5 space-y-8">
@@ -60,9 +60,28 @@
             <h2 class="lg:text-2xl md:text-1xl text-l text-white font-medium font-poppins">Software Developer</h2>
         </div>
 
-        <div id='About' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
-            <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">ABOUT</h1>
+
+    <!-- About page-->
+
+        <div id='About' class="flex items-center justify-center h-screen px-5 hidden">
+            <div class="flex flex-col lg:flex-row space-x-12 gap-y-8 lg:gap-y-0 lg:gap-y-0 md:space-y-0 justify-center">
+                <div class="w-auto sm:w-96 mx-auto"> <!-- Add 'mx-auto' here -->
+                    <img class="rounded-lg" src="portfolio_profile.jpeg">
+                </div>
+                <div class="flex flex-col w-auto mx-auto sm:w-96 lg:items-start space-y-2 ">
+                    <h1 class="text-4xl text-white font-opensans lg:-ml-0 -ml-6">PETER PARKER</h1>
+                    <h2 class="text-l text-white font-medium font-poppins lg:-ml-0 -ml-6">Software Developer</h2>
+                    <p class="text-white text-m pt-4 lg:-ml-0 -ml-6 sm:mr-0 mr-4 font-poppins">
+                        Hi, I'm Vinny. I'm a full stack software developer with several years of experience creating
+                        efficient and robust software solutions. I earned my degree in Computer Science from the
+                        University of Alberta, where I also minored in Mathematics.
+                    </p>
+                </div>
+            </div>
         </div>
+
+
+
 
         <div id='Projects' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
             <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">PROJECTS</h1>
