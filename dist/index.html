@@ -8,11 +8,14 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
     <link href="/dist/styles.css" rel="stylesheet">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -35,7 +38,7 @@
 
     <div class="flex lg:hidden">
         <div id="sidebar"
-            class="sidebar bg-black font-poppins text-white -ml-48 w-36 absolute left-0 top-0 h-screen slide overflow-hidden">
+            class="sidebar bg-black font-poppins text-white -ml-48 w-36 fixed left-0 top-0 h-screen slide overflow-hidden">
             <img src="./logo_svg.svg" alt="Logo" class="h-20 w-20 mx-auto mt-4">
             <ul class="pl-4 pt-8 ">
                 <li class="text-l pb-2 hover:bg-gray-200"></i>Home</li>
@@ -47,8 +50,17 @@
         </div>
     </div>
 
-    <button id="menutoggle" class=" lg:hidden text-white absolute right-8 top-5 text-4xl bg-white-color">
-       <svg id="menubutton" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    <button id="menutoggle" class=" lg:hidden text-white fixed right-8 top-5 text-4xl bg-white-color">
+        <svg id="menubutton" xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+                svg {
+                    fill: #ffffff
+                }
+            </style>
+            <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
     </button>
 
     <!-- Main page -->
@@ -63,7 +75,7 @@
         </div>
 
 
-    <!-- About page-->
+        <!-- About page-->
 
         <div id='About' class="flex items-center justify-center h-screen px-5 hidden">
             <div class="flex flex-col lg:flex-row space-x-12 gap-y-8 lg:gap-y-0 lg:gap-y-0 md:space-y-0 justify-center">
@@ -85,9 +97,63 @@
 
 
 
-        <div id='Projects' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
-            <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">PROJECTS</h1>
+        <div id='Projects' class="flex flex-col items-center justify-center h-screen hidden">
+
+            <div class="text-start">
+                <h1 class="text-4xl text-white font-opensans mb-8">PROJECTS</h1>
+
+            </div>
+
+            <div class="flex flex-row w-3/4 space-x-4 text-white lg:justify-center overflow-x-scroll">
+                <div class="project flex flex-col min-w-[240px] max-w-[240px]">
+                    <div class="w-60 h-60 bg-white min-w-[240px]">
+                        <img class="" src="square_21988_lg.gif">
+                    </div>
+                    <h4 class="font-opensans">Some Project</h4>
+                    <p class="font-poppins text-m">This is a project that i made and this is the text about it</p>
+                </div>
+
+                <div class="project flex flex-col min-w-[240px] max-w-[240px]">
+                    <div class="w-60 h-60 bg-white min-w-[240px]">
+                        <img class="" src="square_21988_lg.gif">
+                    </div>
+                    <h4 class="font-opensans">Some Project</h4>
+                    <p class="font-poppins text-m">This is a project that i made and this is the text about it</p>
+                </div>
+
+                <div class="project flex flex-col min-w-[240px] max-w-[240px]">
+                    <div class="w-60 h-60 bg-white min-w-[240px]">
+                        <img class="" src="square_21988_lg.gif">
+                    </div>
+                    <h4 class="font-opensans">Some Project</h4>
+                    <p class="font-poppins text-m">This is a project that i made and this is the text about it</p>
+                </div>
+            </div>
+
+
+
+
         </div>
+
+
+        <!-- <div id='Projects' class="flex items-center justify-center h-screen hidden">
+
+            <div class="flex flex-row space-x-4 overflow-hidden">
+                <div class="w-64">
+                    <img class=" rounded-lg " src="square_21988_lg.gif">
+                </div>
+                <div class="w-64">
+                    <img class="rounded-lg " src="square_21988_lg.gif">
+                </div>
+                <div class="w-64">
+                    <img class="rounded-lg" src="square_21988_lg.gif">
+                </div>
+            </div>
+        </div> -->
+
+
+
+
 
         <div id='Contact' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
             <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">CONTACT</h1>
@@ -103,6 +169,9 @@
 
 
     <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
 </body>
 
