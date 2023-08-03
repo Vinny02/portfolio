@@ -6,7 +6,9 @@ module.exports = {
     colors: {
       'black': '#000000',
       'white': '#FFFFFF',
-      'darkblue': '#00008B'
+      'darkblue': '#00008B',
+      'gray':  '#a2a2a2',
+      'highlight': '#6D9C9E',
     },
     fontFamily: {
       'opensans': ['Open Sans', 'sans-serif'],

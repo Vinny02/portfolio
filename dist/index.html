@@ -26,10 +26,10 @@
                 <img src="./logo_svg.svg" alt="Logo" class="h-20 w-20">
             </div>
             <ul class="flex items-center font-poppins space-x-8">
-                <li class="hover:text-black">Home</li>
-                <li class="hover:text-gray-300">About</li>
-                <li class="hover:text-gray-300">Projects</li>
-                <li class="hover:text-gray-300">Contact</li>
+                <li class="hover:text-highlight">Home</li>
+                <li class="hover:text-highlight">About</li>
+                <li class="hover:text-highlight">Projects</li>
+                <li class="hover:text-highlight">Contact</li>
             </ul>
         </div>
     </nav>
@@ -38,19 +38,21 @@
 
     <div class="flex lg:hidden">
         <div id="sidebar"
-            class="sidebar bg-black font-poppins text-white -ml-48 w-36 fixed left-0 top-0 h-screen slide overflow-hidden">
+            class="sidebar bg-black font-poppins text-white -ml-48 w-36 fixed left-0 top-0 h-screen slide overflow-hidden z-10">
             <img src="./logo_svg.svg" alt="Logo" class="h-20 w-20 mx-auto mt-4">
             <ul class="pl-4 pt-8 ">
-                <li class="text-l pb-2 hover:bg-gray-200"></i>Home</li>
-                <li class="text-l pb-2 hover:bg-gray-200"></i>About</li>
-                <li class="text-l pb-2 hover:bg-gray-200"></i>Projects</li>
-                <li class="text-l pb-2 hover:bg-gray-200"></i>Contact</li>
+                <li class="text-l pb-2 hover:bg-highlight"></i>Home</li>
+                <li class="text-l pb-2 hover:bg-highlight"></i>About</li>
+                <li class="text-l pb-2 hover:bg-highlight"></i>Projects</li>
+                <li class="text-l pb-2 hover:bg-highlight"></i>Contact</li>
             </ul>
 
         </div>
     </div>
 
-    <button id="menutoggle" class=" lg:hidden text-white fixed right-8 top-5 text-4xl bg-white-color">
+
+    <!-- Menu Button -->
+    <button id="menutoggle" class=" lg:hidden text-white fixed right-5 top-3 text-4xl bg-white-color">
         <svg id="menubutton" xmlns="http://www.w3.org/2000/svg" height="1em"
             viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <style>
@@ -68,10 +70,18 @@
     <div class="container bg-black  max-w-full h-screen z">
         <div id='Home' class="flex flex-col items-center justify-center h-screen px-5 space-y-8">
             <div class="flex flex-row space-x-4">
-                <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">PETER</h1>
-                <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans"> PARKER</h1>
+                <h1 class="lg:text-7xl sm:text-5xl text-4xl flex-row text-white font-opensans">PETER</h1>
+                <h1 class="lg:text-7xl sm:text-5xl text-4xl flex-row text-highlight font-opensans"> PARKER</h1>
             </div>
-            <h2 class="lg:text-2xl md:text-1xl text-l text-white font-medium font-poppins">Software Developer</h2>
+            <h2 class="lg:text-2xl md:text-1xl text-l text-gray font-medium font-poppins">Software Developer</h2>
+
+            <div class="flex flex-row space-x-8 md:space-x-12 pt-8">
+                <img class="w-8 lg:w-10 hover:scale-125" src="linkedin_icon.png">
+                <img class="w-8 lg:w-10 hover:scale-125" src="email-icon.png">
+                <img class="w-8 lg:w-10 hover:scale-125" src="github-mark/github-mark-white.png">
+
+
+            </div>
         </div>
 
 
@@ -83,9 +93,12 @@
                     <img class="rounded-lg" src="portfolio_profile.jpeg">
                 </div>
                 <div class="flex flex-col w-auto mx-auto sm:w-96 lg:items-start space-y-2 ">
-                    <h1 class="text-4xl text-white font-opensans lg:-ml-0 -ml-6">PETER PARKER</h1>
+                    <div class="flex flex-row space-x-2">
+                    <h1 class="text-4xl text-white font-opensans lg:-ml-0 -ml-6">PETER</h1>
+                    <h1 class="text-4xl text-highlight font-opensans lg:-ml-0 -ml-6">PARKER</h1>
+                </div>
                     <h2 class="text-l text-white font-medium font-poppins lg:-ml-0 -ml-6">Software Developer</h2>
-                    <p class="text-white text-m pt-4 lg:-ml-0 -ml-6 sm:mr-0 mr-4 font-poppins">
+                    <p class="text-gray text-m pt-4 lg:-ml-0 -ml-6 sm:mr-0 mr-4 font-poppins">
                         Hi, I'm Vinny. I'm a full stack software developer with several years of experience creating
                         efficient and robust software solutions. I earned my degree in Computer Science from the
                         University of Alberta, where I also minored in Mathematics.
@@ -96,21 +109,24 @@
 
 
 
+        <!-- Project page -->
 
         <div id='Projects' class="flex flex-col items-center justify-center h-screen hidden">
 
-            <div class="text-start">
-                <h1 class="text-4xl text-white font-opensans mb-8">PROJECTS</h1>
+            <div class="text-start flex flex-row space-x-2">
+                <h1 class="text-4xl text-white font-opensans mb-8">MY</h1>
+
+                <h1 class="text-4xl text-highlight font-opensans mb-8">PROJECTS</h1>
 
             </div>
 
-            <div class="flex flex-row w-3/4 space-x-4 text-white lg:justify-center overflow-x-scroll">
+            <div class="relative flex flex-row w-3/4 space-x-4 text-white lg:justify-center overflow-x-scroll">
                 <div class="project flex flex-col min-w-[240px] max-w-[240px]">
                     <div class="w-60 h-60 bg-white min-w-[240px]">
                         <img class="" src="square_21988_lg.gif">
                     </div>
                     <h4 class="font-opensans">Some Project</h4>
-                    <p class="font-poppins text-m">This is a project that i made and this is the text about it</p>
+                    <p class="font-poppins text-m text-gray">This is a project that i made and this is the text about it</p>
                 </div>
 
                 <div class="project flex flex-col min-w-[240px] max-w-[240px]">
@@ -118,50 +134,74 @@
                         <img class="" src="square_21988_lg.gif">
                     </div>
                     <h4 class="font-opensans">Some Project</h4>
-                    <p class="font-poppins text-m">This is a project that i made and this is the text about it</p>
+                    <p class="font-poppins text-m text-gray">This is a project that i made and this is the text about it</p>
                 </div>
 
+                
                 <div class="project flex flex-col min-w-[240px] max-w-[240px]">
                     <div class="w-60 h-60 bg-white min-w-[240px]">
                         <img class="" src="square_21988_lg.gif">
                     </div>
                     <h4 class="font-opensans">Some Project</h4>
-                    <p class="font-poppins text-m">This is a project that i made and this is the text about it</p>
+                    <p class="font-poppins text-m text-gray">This is a project that i made and this is the text about it</p>
                 </div>
             </div>
-
-
-
-
         </div>
 
 
-        <!-- <div id='Projects' class="flex items-center justify-center h-screen hidden">
 
-            <div class="flex flex-row space-x-4 overflow-hidden">
-                <div class="w-64">
-                    <img class=" rounded-lg " src="square_21988_lg.gif">
-                </div>
-                <div class="w-64">
-                    <img class="rounded-lg " src="square_21988_lg.gif">
-                </div>
-                <div class="w-64">
-                    <img class="rounded-lg" src="square_21988_lg.gif">
-                </div>
+
+
+
+
+        <div id='Contact' class="flex flex-col items-center justify-center h-screen px-5 space-y-8 hidden">
+
+            <div class="text-start flex flex-row space-x-2">
+                <h1 class="text-4xl text-highlight font-opensans mb-8">CONTACT</h1>
+
+                <h1 class="text-4xl text-white font-opensans mb-8">ME</h1>
+
             </div>
-        </div> -->
+
+            <div class="flex flex-col lg:flex-row text-white gap-16 justify-center items-start">
+                <div class="space-y-8">
+                    <div class="flex flex-row text-gray font-poppins rounded-lg space-x-2">
+                        <img src="github-mark/github-mark-white.png" class="w-6" alt="github">
+                        <h5>www.github.com/person</h5>
+                    </div>
+                    <div class="flex flex-row text-gray font-poppins rounded-lg space-x-2">
+                        <img src="email-icon.png" class="w-6" alt="email">
+                        <h5>spiderman@nyc.com</h5>
+                    </div>
+                    <div class="flex flex-row text-gray font-poppins rounded-lg space-x-2">
+                        <img src="linkedin_icon.png" class="w-6" alt="email">
+                        <h5>linkedin.com/spiderman</h5>
+                    </div>
 
 
+                </div>
 
-
-
-        <div id='Contact' class="flex items-center justify-center h-screen px-5 space-y-8 hidden">
-            <h1 class="lg:text-7xl md:text-5xl text-4xl flex-row text-white font-opensans">CONTACT</h1>
+                <form>
+                    <div class="flex flex-col space-y-4 w-64 sm:w-96 text-black font-poppins -mt-8 lg:-mt-4">
+                      <label for="formName" class="sr-only">Name:</label>
+                      <input type="text" id="formName" class="rounded-md p-2" placeholder="Name" />
+                  
+                      <label for="formEmail" class="sr-only">Email:</label>
+                      <input type="email" id="formEmail" class="rounded-md p-2" placeholder="Email" />
+                  
+                      <label for="formMessage" class="sr-only">Message:</label>
+                      <textarea id="formMessage" class="rounded-md p-2 h-48 resize-none" placeholder="Message"></textarea>
+                  
+                      <button type="submit" class="bg-highlight text-white px-4 py-2 rounded-full">Submit</button>
+                    </div>
+                  </form>
+                  
+            </div>
         </div>
 
     </div>
 
-    <!-- secondpg-->
+
 
 
 
