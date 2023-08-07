@@ -8,7 +8,7 @@ module.exports = {
       'white': '#FFFFFF',
       'darkblue': '#00008B',
       'gray':  '#a2a2a2',
-      'highlight': '#6D9C9E',
+      'highlight': '#7D7463',
     },
     fontFamily: {
       'opensans': ['Open Sans', 'sans-serif'],
